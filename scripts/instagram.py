@@ -13,7 +13,14 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 VERSAO = os.environ.get("IG_API_VERSAO", "v23.0")
-BASE = f"https://graph.instagram.com/{VERSAO}"
+CONFIG = json.loads((RAIZ / "config.json").read_text())
+
+
+def _base() -> str:
+    """Chave do login do Instagram (IG...) usa graph.instagram.com;
+    chave de usuário do sistema da Meta (EAA...) usa graph.facebook.com."""
+    host = "graph.instagram.com" if token().startswith("IG") else "graph.facebook.com"
+    return f"https://{host}/{VERSAO}"
 
 
 class ErroInstagram(RuntimeError):
@@ -53,20 +60,23 @@ def _chamar(metodo: str, url: str, params: dict) -> dict:
             msg = json.loads(corpo).get("error", {}).get("message", corpo)
         except json.JSONDecodeError:
             msg = corpo
-        raise ErroInstagram(f"{metodo} {url.replace(BASE, '')}: HTTP {e.code} — {msg}") from None
+        raise ErroInstagram(f"{metodo} {url.split(VERSAO, 1)[-1]}: HTTP {e.code} — {msg}") from None
 
 
 def get(caminho: str, **params) -> dict:
-    return _chamar("GET", f"{BASE}/{caminho}", params)
+    return _chamar("GET", f"{_base()}/{caminho}", params)
 
 
 def post(caminho: str, **params) -> dict:
-    return _chamar("POST", f"{BASE}/{caminho}", params)
+    return _chamar("POST", f"{_base()}/{caminho}", params)
 
 
 def eu() -> dict:
     """Conta conectada ao token: {'user_id', 'username', 'account_type'}."""
-    return get("me", fields="user_id,username,account_type")
+    if token().startswith("IG"):
+        return get("me", fields="user_id,username,account_type")
+    d = get(CONFIG["ig_user_id"], fields="id,username")
+    return {"user_id": d["id"], "username": d["username"], "account_type": "BUSINESS (usuário do sistema)"}
 
 
 def esperar_container(cid: str, limite_s: int = 180):
@@ -108,6 +118,8 @@ def permalink(media_id: str) -> str:
 
 def renovar_token() -> str:
     """Troca o token de longa duração por um novo (vale mais 60 dias)."""
+    if not token().startswith("IG"):
+        raise ErroInstagram("esta chave é de usuário do sistema e nunca expira — não precisa renovar.")
     req = urllib.request.Request(
         "https://graph.instagram.com/refresh_access_token?"
         + urllib.parse.urlencode({"grant_type": "ig_refresh_token", "access_token": token()})
