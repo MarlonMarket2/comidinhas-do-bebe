@@ -4,7 +4,10 @@ Perfil: **@comidinhasdobebe.dicas** · Afiliado Hotmart (e-book de introdução 
 
 ## Fluxo semanal
 
-1. **Criar** — o Claude escreve os 7 posts da semana em `conteudo/AAAA-MM-DD/*.json`.
+1. **Criar** — toda **quinta às 10h (hora de Lisboa / 7h de Brasília)** a tarefa agendada
+   "Comidinhas do Bebê: criar posts da próxima semana" (app Claude → Scheduled) escreve os 7 posts da
+   semana seguinte em `conteudo/AAAA-MM-DD/*.json` como rascunho, gera as artes e abre a prévia.
+   Roda com o app do Claude aberto; se estiver fechado, roda quando abrir.
 2. **Renderizar** — gera as artes 1080×1350 e a prévia:
    ```bash
    .venv/bin/python scripts/render.py conteudo/2026-11-23
