@@ -3,7 +3,7 @@
   "hora": "11:35",
   "tipo": "carrossel",
   "pilar": "dica",
-  "status": "aprovado",
+  "status": "publicado",
   "titulo_curto": "O pratinho do bebê",
   "slides": [
     {
@@ -87,5 +87,8 @@
     "#blw",
     "#maternidade"
   ],
-  "capa_cor": "verde"
+  "capa_cor": "verde",
+  "publicado_em": "2026-11-20T11:36:34-03:00",
+  "ig_media_id": "18134999593748241",
+  "permalink": "https://www.instagram.com/p/Df94n_Ml17w/"
 }
