@@ -24,9 +24,11 @@ Perfil: **@comidinhasdobebe.dicas** · Afiliado Hotmart (e-book de introdução 
 
 ## Token do Instagram
 
+- Chave de **usuário do sistema** da Meta (app "Comidinhas Publicador", portfólio "Comidinhas do Bebê"): **não expira**.
 - Fica no `.env` local (fora do git) e no secret `IG_TOKEN` do repositório no GitHub.
-- Vale 60 dias. `.venv/bin/python scripts/ig_token.py renovar` renova e atualiza os dois lugares
-  (rodar a cada aprovação semanal). `... ig_token.py verificar` confere a conta.
+- `.venv/bin/python scripts/ig_token.py verificar` confere a conta.
+- Se um dia precisar trocar: gere outra em developers.facebook.com → app → Casos de uso → API do Instagram →
+  "Gerar tokens de acesso", salve no `.env` e rode `gh secret set IG_TOKEN --repo MarlonMarket2/comidinhas-do-bebe < ...`.
 
 ## Estrutura
 
