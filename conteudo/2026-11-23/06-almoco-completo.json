@@ -1,0 +1,33 @@
+{
+  "data": "2026-11-28",
+  "hora": "11:30",
+  "tipo": "carrossel",
+  "pilar": "receita",
+  "status": "rascunho",
+  "titulo_curto": "Almoço completo",
+  "slides": [
+    {"tipo": "capa", "selo": "A partir de 6 meses", "emoji": "🍲", "titulo": "Almoço completo do bebê", "subtitulo": "Arroz, feijão, frango, abóbora e brócolis — sem sal"},
+    {"tipo": "lista", "titulo": "Você vai precisar", "itens": [
+      {"emoji": "🍚", "texto": "2 colheres (sopa) de arroz bem cozido"},
+      {"emoji": "🫘", "texto": "2 colheres (sopa) de feijão cozido"},
+      {"emoji": "🍗", "texto": "1 filé pequeno de frango"},
+      {"emoji": "🎃", "texto": "1 pedaço de abóbora"},
+      {"emoji": "🥦", "texto": "2 floretes de brócolis"},
+      {"emoji": "🧄", "texto": "Cebola, alho, salsinha e azeite"}
+    ]},
+    {"tipo": "passos", "titulo": "Modo de preparo", "itens": [
+      "Refogue cebola e alho no azeite, junte o frango e água e cozinhe até ficar <b>bem macio</b>",
+      "Desfie o frango bem fininho e finalize com salsinha",
+      "Cozinhe a abóbora e o brócolis no vapor até ficarem macios",
+      "Amasse o feijão com um pouco do caldo",
+      "Monte o prato com <b>cada alimento separado</b>, amassados com o garfo"
+    ]},
+    {"tipo": "dica", "emoji_grande": "🍳", "paragrafos": [
+      "<b>Cozinhe uma vez, sirva a semana toda:</b> faça porções a mais de feijão, frango e legumes e congele separado em forminhas de gelo.",
+      "Na hora, é só montar o prato combinando os cubinhos."
+    ]},
+    {"tipo": "cta"}
+  ],
+  "legenda": "O clássico arroz e feijão também é comida de bebê! 🍲\n\nA partir dos 6 meses o bebê já pode comer a comida da família — a diferença é a textura (amassada com garfo) e o tempero: ervas, alho e cebola no lugar do sal.\n\nEsse prato tem todos os grupos: cereal, feijão, proteína e dois legumes. Equilíbrio sem complicação.\n\n👉 Arrasta para o passo a passo.\n\n📌 Salve e use como modelo para variar durante a semana.\n\n🎁 O guia gratuito \"Primeiras Mordidas Sem Estresse\" tem mais receitas e o checklist de congelamento — link na bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": ["#introducaoalimentar", "#almocodobebe", "#receitasparabebe", "#comidadebebe", "#bebede6meses", "#alimentacaoinfantil", "#semsal"]
+}

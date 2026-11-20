@@ -1,0 +1,51 @@
+name: Publicar no Instagram
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"   # confere a cada 20 min; só publica posts aprovados cujo horário chegou
+  workflow_dispatch:
+    inputs:
+      agora:
+        description: "Prefixo de um post aprovado para publicar já (opcional)"
+        required: false
+
+concurrency:
+  group: publicar-instagram
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publicar próximo post vencido
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          AGORA: ${{ github.event.inputs.agora }}
+        run: |
+          if [ -n "$AGORA" ]; then
+            python scripts/publicar.py --agora "$AGORA"
+          else
+            python scripts/publicar.py
+          fi
+
+      - name: Registrar status no repositório
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain conteudo)" ]; then
+            git config user.name "publicador-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add conteudo
+            git commit -m "status: publicação $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase
+            git push
+          fi

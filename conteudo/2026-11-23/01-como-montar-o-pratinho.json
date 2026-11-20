@@ -1,0 +1,31 @@
+{
+  "data": "2026-11-23",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "dica",
+  "status": "rascunho",
+  "titulo_curto": "O pratinho do bebê",
+  "slides": [
+    {"tipo": "capa", "selo": "A partir de 6 meses", "emoji": "🍽️", "titulo": "Como montar o pratinho do bebê", "subtitulo": "O passo a passo que tira a dúvida de toda refeição"},
+    {"tipo": "tabela", "titulo": "1 alimento de cada grupo", "linhas": [
+      {"emoji": "🍚", "grupo": "Cereais e raízes", "exemplos": "Arroz bem cozido, batata-doce, mandioquinha, inhame, aipim, macarrão"},
+      {"emoji": "🫘", "grupo": "Feijões", "exemplos": "Feijão, lentilha, grão-de-bico, ervilha — sempre amassados"},
+      {"emoji": "🍗", "grupo": "Proteína", "exemplos": "Frango, carne, peixe ou ovo bem cozido"},
+      {"emoji": "🥦", "grupo": "Legumes e verduras", "exemplos": "Abóbora, cenoura, brócolis, abobrinha, chuchu, espinafre"}
+    ]},
+    {"tipo": "lista", "titulo": "Como servir", "itens": [
+      {"emoji": "🥄", "texto": "<b>Amasse com o garfo</b> — nada de liquidificar ou peneirar"},
+      {"emoji": "🎨", "texto": "Deixe <b>cada alimento separado</b> no prato para o bebê conhecer os sabores"},
+      {"emoji": "🧄", "texto": "Tempere com <b>cebola, alho, salsinha e azeite</b> — sem sal"},
+      {"emoji": "🍌", "texto": "Fruta de sobremesa, <b>sem açúcar</b>"},
+      {"emoji": "💧", "texto": "Ofereça <b>água</b> ao longo do dia"}
+    ]},
+    {"tipo": "dica", "emoji_grande": "💛", "paragrafos": [
+      "Não se preocupe com a quantidade no começo.",
+      "<b>Respeite a fome e a saciedade do bebê.</b> Nas primeiras semanas ele está descobrindo texturas e sabores — cada colherada já é uma conquista."
+    ]},
+    {"tipo": "cta"}
+  ],
+  "legenda": "Toda refeição vira um quebra-cabeça? 🧩\n\nO pratinho do bebê a partir dos 6 meses fica fácil quando você pensa em GRUPOS: um cereal ou raiz, um feijão, uma proteína e um legume ou verdura. Pronto — almoço e jantar equilibrados.\n\n✅ Amasse com o garfo (não precisa liquidificar)\n✅ Deixe os alimentos separados no prato\n✅ Tempere com ervas, alho e cebola — sem sal e sem açúcar\n\n📌 Salve este post para consultar na hora de cozinhar.\n\n🎁 No link da bio tem o guia gratuito \"Primeiras Mordidas Sem Estresse\" com 5 receitas testadas e o checklist de congelamento.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": ["#introducaoalimentar", "#bebede6meses", "#alimentacaoinfantil", "#receitasparabebe", "#pratinhodobebe", "#blw", "#maternidade"]
+}

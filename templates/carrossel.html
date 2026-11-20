@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --terracota: {{ cores.terracota }};
+    --verde: {{ cores.verde }};
+    --creme: {{ cores.creme }};
+    --areia: {{ cores.areia }};
+    --amarelo: {{ cores.amarelo }};
+    --texto: {{ cores.texto }};
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #888; font-family: 'Nunito', system-ui, sans-serif; color: var(--texto); }
+  .slide {
+    width: 1080px; height: 1350px; position: relative; overflow: hidden;
+    background: var(--creme); display: flex; flex-direction: column;
+    padding: 90px 90px 70px; margin-bottom: 20px;
+  }
+  .emoji { font-family: 'Apple Color Emoji', 'Noto Color Emoji', sans-serif; }
+
+  /* ---------- topo e rodapé dos slides internos ---------- */
+  .topo { display: flex; justify-content: space-between; align-items: center; margin-bottom: 56px; }
+  .topo .rotulo {
+    background: var(--areia); color: var(--terracota); font-weight: 800; font-size: 26px;
+    padding: 12px 26px; border-radius: 999px; letter-spacing: .5px; max-width: 760px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .topo .contador { font-weight: 800; font-size: 26px; color: #A8988C; }
+  .rodape {
+    margin-top: auto; padding-top: 30px; display: flex; justify-content: space-between; align-items: center;
+    font-size: 26px; font-weight: 700; color: #A8988C;
+  }
+  .rodape .seta { color: var(--terracota); font-weight: 900; }
+
+  h2.secao {
+    font-size: 70px; line-height: 1.08; font-weight: 900; color: var(--verde);
+    border-left: 14px solid var(--terracota); padding-left: 30px; margin-bottom: 48px;
+  }
+  .conteudo { flex: 1; display: flex; flex-direction: column; justify-content: safe center; gap: 26px; font-size: var(--fs, 48px); overflow: hidden; padding-bottom: 20px; }
+
+  /* ---------- capa ---------- */
+  .capa { background: var(--terracota); color: #fff; justify-content: center; align-items: center; text-align: center; padding: 90px 80px; }
+  .capa .selo {
+    background: var(--amarelo); color: var(--texto); font-weight: 900; font-size: 30px; letter-spacing: 2px;
+    padding: 14px 34px; border-radius: 999px; margin-bottom: 50px; text-transform: uppercase;
+  }
+  .capa .disco {
+    width: 400px; height: 400px; border-radius: 50%; background: var(--creme);
+    display: flex; align-items: center; justify-content: center; font-size: 230px; margin-bottom: 60px;
+    box-shadow: 0 20px 0 rgba(0,0,0,.08);
+  }
+  .capa .disco.foto { overflow: hidden; }
+  .capa .disco.foto img { width: 100%; height: 100%; object-fit: cover; }
+  .capa h1 { font-size: var(--fs-titulo, 96px); line-height: 1.04; font-weight: 900; margin-bottom: 30px; }
+  .capa .sub { font-size: 40px; font-weight: 700; opacity: .92; line-height: 1.3; max-width: 860px; }
+  .capa .arraste {
+    position: absolute; bottom: 60px; left: 0; right: 0; text-align: center;
+    font-size: 28px; font-weight: 800; opacity: .85; letter-spacing: 1px;
+  }
+  .capa .marca { position: absolute; top: 56px; left: 0; right: 0; text-align: center; font-size: 26px; font-weight: 800; opacity: .8; }
+
+  /* ---------- lista ---------- */
+  .item {
+    background: #fff; border-radius: 28px; padding: 26px 34px; display: flex; gap: 26px; align-items: flex-start;
+    line-height: 1.3; font-weight: 700; box-shadow: 0 4px 0 var(--areia);
+  }
+  .item .bolinha { flex: none; width: .55em; height: .55em; border-radius: 50%; background: var(--verde); margin-top: .38em; }
+  .item .ic { flex: none; font-size: 1.2em; line-height: 1.1; }
+  .item b { color: var(--terracota); font-weight: 900; }
+
+  /* ---------- passos ---------- */
+  .passo { display: flex; gap: 28px; align-items: flex-start; line-height: 1.3; font-weight: 700; }
+  .passo .num {
+    flex: none; width: 1.55em; height: 1.55em; border-radius: 50%; background: var(--terracota); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: .95em;
+  }
+  .passo .txt { padding-top: .12em; }
+
+  /* ---------- tabela (grupo -> exemplos) ---------- */
+  .linha { display: grid; grid-template-columns: 360px 1fr; border-radius: 24px; overflow: hidden; background: #fff; box-shadow: 0 4px 0 var(--areia); }
+  .linha .k { background: var(--verde); color: #fff; font-weight: 900; padding: 24px 26px; line-height: 1.2; display: flex; align-items: center; gap: 14px; }
+  .linha .v { padding: 24px 28px; font-weight: 700; line-height: 1.3; }
+  .conteudo.tabela { font-size: var(--fs, 40px); gap: 22px; }
+
+  /* ---------- dica / alerta ---------- */
+  .caixa {
+    background: #fff; border-radius: 32px; padding: 48px 50px; border-left: 18px solid var(--amarelo);
+    font-size: var(--fs, 52px); line-height: 1.35; font-weight: 700; box-shadow: 0 6px 0 var(--areia);
+  }
+  .caixa.alerta { border-left-color: var(--terracota); background: #FFF4EE; }
+  .caixa p + p { margin-top: 26px; }
+  .grande-emoji { font-size: 150px; margin: 10px 0 40px; }
+
+  /* ---------- cta ---------- */
+  .cta { background: var(--verde); color: #fff; align-items: center; text-align: center; justify-content: center; }
+  .cta h2 { font-size: 76px; line-height: 1.08; font-weight: 900; margin-bottom: 40px; }
+  .cta .mini-guia {
+    width: 470px; border-radius: 22px; overflow: hidden; background: var(--creme); color: var(--texto);
+    box-shadow: 0 24px 50px rgba(0,0,0,.25); transform: rotate(-3deg); margin-bottom: 56px;
+  }
+  .cta .mini-guia .cab { background: var(--terracota); color: #fff; padding: 40px 30px; }
+  .cta .mini-guia .pill { display: inline-block; background: var(--amarelo); color: var(--texto); font-size: 15px; font-weight: 900; padding: 6px 14px; border-radius: 999px; letter-spacing: 1px; margin-bottom: 16px; }
+  .cta .mini-guia .t { font-size: 38px; font-weight: 900; line-height: 1.05; }
+  .cta .mini-guia .corpo { padding: 26px 30px; font-size: 20px; font-weight: 700; text-align: left; line-height: 1.5; }
+  .cta .acao { background: var(--amarelo); color: var(--texto); font-size: 46px; font-weight: 900; padding: 26px 50px; border-radius: 999px; margin-bottom: 36px; }
+  .cta .extra { font-size: 32px; font-weight: 700; opacity: .95; line-height: 1.35; }
+  .cta .aviso { position: absolute; bottom: 50px; left: 80px; right: 80px; font-size: 22px; opacity: .75; font-weight: 600; }
+  .cta .marca { position: absolute; top: 56px; left: 0; right: 0; font-size: 28px; font-weight: 800; opacity: .85; }
+</style>
+</head>
+<body>
+{% set total = post.slides|length %}
+{% for s in post.slides %}
+{% set n = loop.index %}
+
+{% if s.tipo == 'capa' %}
+<section class="slide capa" style="{% if s.titulo|length > 34 %}--fs-titulo: 82px{% endif %}">
+  <div class="marca">{{ perfil }}</div>
+  {% if s.selo %}<div class="selo">{{ s.selo }}</div>{% endif %}
+  {% if s.foto %}<div class="disco foto"><img src="{{ s.foto }}"></div>
+  {% elif s.emoji %}<div class="disco emoji">{{ s.emoji }}</div>{% endif %}
+  <h1>{{ s.titulo }}</h1>
+  {% if s.subtitulo %}<div class="sub">{{ s.subtitulo }}</div>{% endif %}
+  <div class="arraste">ARRASTA PRO LADO →</div>
+</section>
+
+{% elif s.tipo == 'cta' %}
+<section class="slide cta">
+  <div class="marca">{{ perfil }}</div>
+  <h2>{{ s.titulo or 'Quer mais receitas assim?' }}</h2>
+  <div class="mini-guia">
+    <div class="cab"><div class="pill">GUIA GRATUITO • 6 MESES+</div><div class="t">{{ nome_guia }}</div></div>
+    <div class="corpo">✓ Como montar o pratinho<br>✓ 5 receitas sem açúcar e sem sal<br>✓ Checklist de congelamento</div>
+  </div>
+  {% if cta_modo == 'comentario' %}
+  <div class="acao">Comente {{ palavra_comentario }} 💬</div>
+  <div class="extra">que eu te mando o guia grátis no Direct</div>
+  {% else %}
+  <div class="acao">Baixe grátis no link da bio 👆</div>
+  <div class="extra">Salve este post 🔖 e mande pra uma mãe que precisa</div>
+  {% endif %}
+  <div class="aviso">Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.</div>
+</section>
+
+{% else %}
+<section class="slide">
+  <div class="topo"><div class="rotulo">{{ post.titulo_curto }}</div><div class="contador">{{ n }}/{{ total }}</div></div>
+  {% if s.titulo %}<h2 class="secao">{% if s.emoji %}<span class="emoji">{{ s.emoji }}</span> {% endif %}{{ s.titulo }}</h2>{% endif %}
+
+  {% if s.tipo == 'lista' %}
+  <div class="conteudo">
+    {% for it in s.itens %}
+    <div class="item">{% if it is mapping %}<span class="ic emoji">{{ it.emoji }}</span><span>{{ it.texto|safe }}</span>{% else %}<span class="bolinha"></span><span>{{ it|safe }}</span>{% endif %}</div>
+    {% endfor %}
+  </div>
+
+  {% elif s.tipo == 'passos' %}
+  <div class="conteudo">
+    {% for it in s.itens %}
+    <div class="passo"><span class="num">{{ loop.index }}</span><span class="txt">{{ it|safe }}</span></div>
+    {% endfor %}
+  </div>
+
+  {% elif s.tipo == 'tabela' %}
+  <div class="conteudo tabela">
+    {% for l in s.linhas %}
+    <div class="linha"><div class="k">{% if l.emoji %}<span class="emoji">{{ l.emoji }}</span>{% endif %}{{ l.grupo }}</div><div class="v">{{ l.exemplos|safe }}</div></div>
+    {% endfor %}
+  </div>
+
+  {% elif s.tipo in ['dica', 'alerta'] %}
+  <div class="conteudo">
+    {% if s.emoji_grande %}<div class="grande-emoji emoji">{{ s.emoji_grande }}</div>{% endif %}
+    <div class="caixa {{ 'alerta' if s.tipo == 'alerta' }}">
+      {% for p in s.paragrafos %}<p>{{ p|safe }}</p>{% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="rodape"><span>{{ perfil }}</span>{% if n < total %}<span class="seta">arrasta →</span>{% endif %}</div>
+</section>
+{% endif %}
+{% endfor %}
+
+<script>
+  // Encolhe a fonte do conteúdo até caber no slide (evita texto cortado).
+  async function ajustar() {
+    await document.fonts.ready;
+    document.querySelectorAll('.conteudo').forEach(c => {
+      let fs = parseFloat(getComputedStyle(c).fontSize);
+      while (c.scrollHeight > c.clientHeight + 1 && fs > 22) {
+        fs -= 1; c.style.setProperty('--fs', fs + 'px');
+        c.querySelectorAll('.caixa').forEach(x => x.style.setProperty('--fs', fs + 'px'));
+      }
+    });
+    document.body.dataset.pronto = '1';
+  }
+  ajustar();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "data": "2026-11-26",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "dica",
+  "status": "rascunho",
+  "titulo_curto": "Cortes seguros",
+  "slides": [
+    {"tipo": "capa", "selo": "Salve este post", "emoji": "🍇", "titulo": "Como cortar os alimentos para evitar engasgo", "subtitulo": "O guia rápido que toda mãe precisa ter"},
+    {"tipo": "lista", "titulo": "Sempre assim", "itens": [
+      {"emoji": "🍇", "texto": "<b>Uva e tomate-cereja:</b> em 4, no sentido do comprimento"},
+      {"emoji": "🍌", "texto": "<b>Banana:</b> em palitos do tamanho de um dedo"},
+      {"emoji": "🥕", "texto": "<b>Cenoura, brócolis, maçã:</b> cozidos até ficarem macios"},
+      {"emoji": "🍗", "texto": "<b>Carnes:</b> desfiadas, moídas ou em tiras grandes para chupar"},
+      {"emoji": "🥚", "texto": "<b>Ovo:</b> sempre bem cozido, em fatias ou amassado"}
+    ]},
+    {"tipo": "alerta", "titulo": "Nunca ofereça", "emoji": "🚫", "paragrafos": [
+      "❌ Uva, azeitona e tomate-cereja <b>inteiros</b><br>❌ Oleaginosas e amendoim <b>inteiros</b> (só moídos ou em pasta)<br>❌ Pipoca, balas e salsicha em rodelas<br>❌ Legumes e frutas <b>crus e duros</b>"
+    ]},
+    {"tipo": "dica", "emoji_grande": "👀", "paragrafos": [
+      "<b>Bebê sentado, ereto e sempre com um adulto olhando.</b>",
+      "Nada de comer no carro, andando ou deitado."
+    ]},
+    {"tipo": "cta"}
+  ],
+  "legenda": "O medo de engasgo é o que mais trava a introdução alimentar. E o corte certo resolve grande parte dele. 🔪\n\nA regra de ouro: alimentos redondos e pequenos (uva, tomate-cereja, azeitona) SEMPRE cortados em 4 no comprimento. E tudo que é duro e cru, cozinhe até ficar macio.\n\n👉 Arrasta para ver a lista completa do que evitar.\n\n📌 Salve este post e mande para quem cuida do seu bebê (vó, babá, escolinha).\n\n🎁 No link da bio tem o guia gratuito com receitas seguras para começar.\n\n⚠️ Conteúdo informativo. Recomendamos que todo cuidador faça um curso de primeiros socorros infantis. Siga a orientação do pediatra.",
+  "hashtags": ["#introducaoalimentar", "#engasgo", "#blw", "#segurancainfantil", "#alimentacaoinfantil", "#bebede6meses", "#dicasdemae"]
+}

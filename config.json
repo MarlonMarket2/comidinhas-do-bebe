@@ -1,0 +1,23 @@
+{
+  "perfil": "@comidinhasdobebe.dicas",
+  "nome": "Comidinhas do Bebê",
+  "link_guia": "https://drive.google.com/file/d/1HSN2kq7TBJeif10hnYKU-C0-TAaQZwk8/view",
+  "nome_guia": "Primeiras Mordidas Sem Estresse",
+  "link_vendas": "https://go.hotmart.com/R108553840F",
+  "link_checkout": "https://go.hotmart.com/R108553840F?ap=9f82",
+  "cta_modo": "bio",
+  "palavra_comentario": "PRATINHO",
+  "fuso": "America/Sao_Paulo",
+  "horario_padrao": "19:30",
+  "chrome": "/Volumes/Dados/Aplicativos/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "cores": {
+    "terracota": "#C65A32",
+    "verde": "#4A7A58",
+    "creme": "#FBF6EE",
+    "areia": "#F3EADF",
+    "amarelo": "#EDB64A",
+    "texto": "#3B2F2A"
+  },
+  "github_repo": "MarlonMarket2/comidinhas-do-bebe",
+  "midia_base_url": "https://raw.githubusercontent.com/MarlonMarket2/comidinhas-do-bebe/main"
+}

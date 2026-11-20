@@ -1,0 +1,31 @@
+{
+  "data": "2026-11-27",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "receita",
+  "status": "rascunho",
+  "titulo_curto": "Bolinho de banana e aveia",
+  "slides": [
+    {"tipo": "capa", "selo": "A partir de 6 meses", "emoji": "🧁", "titulo": "Bolinho de banana e aveia", "subtitulo": "Sem açúcar, sem leite, sem farinha branca"},
+    {"tipo": "lista", "titulo": "Ingredientes", "itens": [
+      {"emoji": "🍌", "texto": "2 bananas bem maduras"},
+      {"emoji": "🥚", "texto": "1 ovo"},
+      {"emoji": "🌾", "texto": "6 colheres (sopa) de aveia em flocos finos"},
+      {"emoji": "✨", "texto": "Opcional: pitada de canela"}
+    ]},
+    {"tipo": "passos", "titulo": "Modo de preparo", "itens": [
+      "Amasse bem as bananas com o garfo",
+      "Misture o ovo e depois a aveia, até formar uma massa grossa",
+      "Distribua em forminhas de mini muffin untadas com azeite",
+      "Asse a 180 °C por 20 a 25 minutos, até o palito sair limpo",
+      "Desenforme morno e sirva em pedaços"
+    ]},
+    {"tipo": "dica", "emoji_grande": "❄️", "paragrafos": [
+      "<b>Rende cerca de 10 mini bolinhos.</b>",
+      "Guarde na geladeira por até 2 dias ou congele em pote fechado por até 30 dias. Descongele na geladeira de um dia para o outro."
+    ]},
+    {"tipo": "cta"}
+  ],
+  "legenda": "Lanche pronto para a semana inteira em 30 minutos. 🧁\n\nEsse bolinho é adoçado só com a banana — nada de açúcar, que deve ficar fora da alimentação do bebê até os 2 anos.\n\nFica fofinho, fácil de segurar e ainda dá para congelar. Ótimo para levar na bolsa do passeio!\n\n👉 Arrasta para ver ingredientes e modo de preparo.\n\n📌 Salve para fazer no fim de semana.\n\n🎁 Mais 5 receitas testadas no guia gratuito do link da bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": ["#receitasparabebe", "#lanchesaudavel", "#introducaoalimentar", "#semacucar", "#muffinsaudavel", "#bebede6meses", "#alimentacaoinfantil"]
+}
