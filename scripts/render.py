@@ -8,6 +8,7 @@ import argparse
 import html
 import json
 import sys
+from datetime import date
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
@@ -36,7 +37,10 @@ def renderizar(pasta: Path, so: str | None = None):
             destino.mkdir(parents=True, exist_ok=True)
             for velho in list(destino.glob("*.png")) + list(destino.glob("*.jpg")):
                 velho.unlink()
-            html_doc = tpl.render(post=post, perfil=CONFIG["perfil"], nome_guia=CONFIG["nome_guia"],
+            # Dias alternados = capas alternadas (terracota/verde): a grade 3x fica em xadrez.
+            dia = date.fromisoformat(post["data"]).toordinal()
+            capa_cor = post.get("capa_cor") or ("verde" if dia % 2 else "terracota")
+            html_doc = tpl.render(post=post, perfil=CONFIG["perfil"], nome_guia=CONFIG["nome_guia"], capa_cor=capa_cor,
                                   cta_modo=CONFIG["cta_modo"], palavra_comentario=CONFIG["palavra_comentario"],
                                   cores=CONFIG["cores"])
             tmp = destino / "_slides.html"

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root { --terracota: {{ cores.terracota }}; --verde: {{ cores.verde }}; --creme: {{ cores.creme }};
+          --areia: {{ cores.areia }}; --amarelo: {{ cores.amarelo }}; --texto: {{ cores.texto }}; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Nunito', sans-serif; color: var(--texto); background: #777; }
+  .emoji { font-family: 'Apple Color Emoji', 'Noto Color Emoji', sans-serif; }
+  section { width: 1080px; height: 1920px; position: relative; overflow: hidden; margin-bottom: 20px; background: var(--creme); }
+
+  /* ---- capas de destaque: o Instagram mostra só o círculo central ---- */
+  .capa-dest { display: flex; align-items: center; justify-content: center; }
+  .capa-dest .anel { width: 940px; height: 940px; border-radius: 50%; border: 26px solid var(--cor);
+                     display: flex; align-items: center; justify-content: center; }
+  .capa-dest .disco { width: 760px; height: 760px; border-radius: 50%; background: var(--cor);
+                      display: flex; align-items: center; justify-content: center; font-size: 400px; }
+
+  /* ---- stories (zonas seguras: 250px topo, 340px base) ---- */
+  .story { padding: 250px 90px 340px; display: flex; flex-direction: column; }
+  .story .faixa { position: absolute; top: 0; left: 0; right: 0; height: 760px; background: var(--cor); }
+  .story > * { position: relative; }
+  .story .marca { font-size: 34px; font-weight: 800; color: #fff; opacity: .9; text-align: center; margin-bottom: 40px; }
+  .story .selo { align-self: center; background: var(--amarelo); font-weight: 900; font-size: 34px; letter-spacing: 2px;
+                 padding: 14px 36px; border-radius: 999px; margin-bottom: 36px; text-transform: uppercase; }
+  .story h1 { color: #fff; text-align: center; font-size: 100px; line-height: 1.02; font-weight: 900; margin-bottom: 60px; }
+  .story .cartao { background: #fff; border-radius: 40px; padding: 56px 56px; box-shadow: 0 10px 0 var(--areia);
+                   font-size: 52px; font-weight: 700; line-height: 1.38; }
+  .story .cartao p + p { margin-top: 26px; }
+  .story .cartao b { color: var(--terracota); font-weight: 900; }
+  .story .lista { display: flex; flex-direction: column; gap: 26px; }
+  .story .lista div { display: flex; gap: 26px; align-items: flex-start; }
+  .story .lista .ic { flex: none; font-size: 1.15em; }
+  .story .acao { margin-top: auto; align-self: center; background: var(--terracota); color: #fff; font-size: 50px; font-weight: 900;
+                 padding: 30px 60px; border-radius: 999px; text-align: center; }
+  .story .sub { text-align: center; font-size: 34px; font-weight: 700; color: #8a7a6e; margin-top: 22px; }
+  .story .aviso { text-align: center; font-size: 30px; font-weight: 600; color: #9a8b80; margin-top: 30px; line-height: 1.35; }
+
+  .mini-guia { align-self: center; width: 600px; border-radius: 30px; overflow: hidden; background: var(--creme);
+               box-shadow: 0 30px 60px rgba(0,0,0,.25); transform: rotate(-3deg); margin-bottom: 60px; }
+  .mini-guia .cab { background: var(--terracota); color: #fff; padding: 52px 40px; text-align: center; }
+  .mini-guia .pill { display: inline-block; background: var(--amarelo); color: var(--texto); font-size: 20px; font-weight: 900;
+                     padding: 8px 18px; border-radius: 999px; letter-spacing: 1px; margin-bottom: 20px; }
+  .mini-guia .t { font-size: 52px; font-weight: 900; line-height: 1.05; }
+  .mini-guia .corpo { padding: 34px 40px; font-size: 28px; font-weight: 700; line-height: 1.6; }
+</style>
+</head>
+<body>
+{% for d in destaques %}
+<section class="capa-dest" id="capa-{{ d.id }}" style="--cor: var(--{{ d.cor }})">
+  <div class="anel"><div class="disco emoji">{{ d.emoji }}</div></div>
+</section>
+{% endfor %}
+
+{# ------------------------- stories ------------------------- #}
+<section class="story" id="story-guia" style="--cor: var(--terracota)">
+  <div class="faixa"></div>
+  <div class="marca">{{ perfil }}</div>
+  <div class="selo">Grátis</div>
+  <div class="mini-guia">
+    <div class="cab"><div class="pill">GUIA GRATUITO • 6 MESES+</div><div class="t">{{ nome_guia }}</div></div>
+    <div class="corpo">✓ Como montar o pratinho<br>✓ 5 receitas sem açúcar e sem sal<br>✓ Checklist de congelamento seguro</div>
+  </div>
+  <div class="cartao"><p>Receitas testadas para as <b>primeiras semanas</b> da introdução alimentar — prontas para imprimir ou ver no celular.</p></div>
+  <div class="acao">Toque no link da bio 👆</div>
+  <div class="sub">linktr.ee/comidinhasdobebe.dicas</div>
+</section>
+
+<section class="story" id="story-receitas" style="--cor: var(--verde)">
+  <div class="faixa"></div>
+  <div class="marca">{{ perfil }}</div>
+  <div class="selo">A partir de 6 meses</div>
+  <h1>Receitas da semana</h1>
+  <div class="cartao lista">
+    {% for r in receitas %}<div><span class="ic emoji">{{ r[0] }}</span><span>{{ r[1] }}</span></div>{% endfor %}
+  </div>
+  <div class="acao">Veja no perfil e salve 🔖</div>
+</section>
+
+<section class="story" id="story-cortes" style="--cor: var(--terracota)">
+  <div class="faixa"></div>
+  <div class="marca">{{ perfil }}</div>
+  <div class="selo">Salve este story</div>
+  <h1>Cortes seguros</h1>
+  <div class="cartao lista">
+    <div><span class="ic emoji">🍇</span><span><b>Uva e tomate-cereja:</b> em 4, no comprimento</span></div>
+    <div><span class="ic emoji">🍌</span><span><b>Banana:</b> palitos do tamanho de um dedo</span></div>
+    <div><span class="ic emoji">🥕</span><span><b>Cenoura, maçã:</b> cozidas até ficarem macias</span></div>
+    <div><span class="ic emoji">🍗</span><span><b>Carnes:</b> desfiadas ou moídas</span></div>
+    <div><span class="ic emoji">🚫</span><span><b>Nunca:</b> castanhas inteiras, pipoca, salsicha em rodela</span></div>
+  </div>
+  <div class="aviso">Bebê sempre sentado e com um adulto olhando.</div>
+</section>
+
+<section class="story" id="story-sobre" style="--cor: var(--verde)">
+  <div class="faixa"></div>
+  <div class="marca">{{ perfil }}</div>
+  <h1>Oi, mamãe! 💛</h1>
+  <div class="cartao">
+    <p>Aqui você encontra <b>receitas práticas e seguras</b> para a introdução alimentar do seu bebê, a partir dos 6 meses.</p>
+    <p>✓ Sem sal e sem açúcar<br>✓ Cortes seguros contra engasgo<br>✓ Ideias novas toda semana</p>
+  </div>
+  <div class="aviso">Somos uma página de dicas e indicações.<br>Conteúdo informativo — siga sempre a orientação do pediatra.</div>
+  <div class="acao">Guia grátis no link da bio 👆</div>
+</section>
+
+<script>document.fonts.ready.then(() => document.body.dataset.pronto = '1');</script>
+</body>
+</html>

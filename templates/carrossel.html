@@ -43,6 +43,7 @@
   .conteudo { flex: 1; display: flex; flex-direction: column; justify-content: safe center; gap: 26px; font-size: var(--fs, 48px); overflow: hidden; padding-bottom: 20px; }
 
   /* ---------- capa ---------- */
+  .capa.verde { background: var(--verde); }
   .capa { background: var(--terracota); color: #fff; justify-content: center; align-items: center; text-align: center; padding: 90px 80px; }
   .capa .selo {
     background: var(--amarelo); color: var(--texto); font-weight: 900; font-size: 30px; letter-spacing: 2px;
@@ -118,7 +119,7 @@
 {% set n = loop.index %}
 
 {% if s.tipo == 'capa' %}
-<section class="slide capa" style="{% if s.titulo|length > 34 %}--fs-titulo: 82px{% endif %}">
+<section class="slide capa {{ capa_cor }}" style="{% if s.titulo|length > 34 %}--fs-titulo: 82px{% endif %}">
   <div class="marca">{{ perfil }}</div>
   {% if s.selo %}<div class="selo">{{ s.selo }}</div>{% endif %}
   {% if s.foto %}<div class="disco foto"><img src="{{ s.foto }}"></div>
