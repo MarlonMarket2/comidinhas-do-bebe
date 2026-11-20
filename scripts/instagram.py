@@ -112,6 +112,13 @@ def publicar_imagem(user_id: str, url_imagem: str, legenda: str) -> str:
     return post(f"{user_id}/media_publish", creation_id=cid)["id"]
 
 
+def publicar_story(user_id: str, url_imagem: str) -> str:
+    """Publica uma imagem 9:16 (JPEG em URL pública) como story. Retorna o id da mídia."""
+    cid = post(f"{user_id}/media", image_url=url_imagem, media_type="STORIES")["id"]
+    esperar_container(cid)
+    return post(f"{user_id}/media_publish", creation_id=cid)["id"]
+
+
 def permalink(media_id: str) -> str:
     return get(media_id, fields="permalink").get("permalink", "")
 
