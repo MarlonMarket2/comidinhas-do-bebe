@@ -42,6 +42,11 @@ Perfil: **@comidinhasdobebe.dicas** · Afiliado Hotmart (e-book de introdução 
 Tipos de slide: `capa`, `lista`, `passos`, `tabela`, `dica`, `alerta`, `cta`.
 Na capa, `"foto": "caminho/da/foto.jpg"` substitui o emoji por uma foto real.
 
+## Material do produtor
+
+A fonte oficial de criativos, regras e materiais da afiliação está registrada em
+`fontes/material-do-produtor.md` (arquivo local, fora do GitHub por ser exclusivo de afiliados).
+
 ## Regras do produtor (não quebrar)
 
 - Nunca usar o nome do produto no nome/@ do perfil nem se apresentar como equipe oficial.

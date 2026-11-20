@@ -4,3 +4,4 @@ __pycache__/
 .DS_Store
 saida/**/_slides.html
 saida/**/*.png
+fontes/
