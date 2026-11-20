@@ -3,30 +3,73 @@
   "hora": "19:30",
   "tipo": "carrossel",
   "pilar": "receita",
-  "status": "rascunho",
+  "status": "aprovado",
   "titulo_curto": "Omelete de forno",
   "slides": [
-    {"tipo": "capa", "selo": "A partir de 6 meses", "emoji": "🥚", "titulo": "Omelete de forno com legumes", "subtitulo": "Corta em palitinhos e o bebê come sozinho"},
-    {"tipo": "lista", "titulo": "Ingredientes", "itens": [
-      {"emoji": "🥚", "texto": "3 ovos"},
-      {"emoji": "🥒", "texto": "½ abobrinha ralada e bem espremida"},
-      {"emoji": "🥕", "texto": "1 cenoura pequena ralada fininha"},
-      {"emoji": "🌿", "texto": "Cheiro-verde picado"},
-      {"emoji": "🫒", "texto": "Azeite para untar"}
-    ]},
-    {"tipo": "passos", "titulo": "Modo de preparo", "itens": [
-      "Bata os ovos com um garfo",
-      "Misture a abobrinha, a cenoura e o cheiro-verde",
-      "Despeje em uma forma pequena untada com azeite",
-      "Asse a 180 °C por 20 a 25 minutos, até ficar <b>firme no centro</b>",
-      "Espere amornar e corte em palitos ou quadradinhos"
-    ]},
-    {"tipo": "dica", "emoji_grande": "💡", "paragrafos": [
-      "<b>Esprema bem a abobrinha</b> num pano limpo antes de misturar — assim a omelete não fica aguada.",
-      "Troque os legumes ao longo da semana: espinafre, brócolis picadinho e abóbora também ficam ótimos."
-    ]},
-    {"tipo": "cta"}
+    {
+      "tipo": "capa",
+      "selo": "A partir de 6 meses",
+      "emoji": "🥚",
+      "titulo": "Omelete de forno com legumes",
+      "subtitulo": "Corta em palitinhos e o bebê come sozinho"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🥚",
+          "texto": "3 ovos"
+        },
+        {
+          "emoji": "🥒",
+          "texto": "½ abobrinha ralada e bem espremida"
+        },
+        {
+          "emoji": "🥕",
+          "texto": "1 cenoura pequena ralada fininha"
+        },
+        {
+          "emoji": "🌿",
+          "texto": "Cheiro-verde picado"
+        },
+        {
+          "emoji": "🫒",
+          "texto": "Azeite para untar"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Bata os ovos com um garfo",
+        "Misture a abobrinha, a cenoura e o cheiro-verde",
+        "Despeje em uma forma pequena untada com azeite",
+        "Asse a 180 °C por 20 a 25 minutos, até ficar <b>firme no centro</b>",
+        "Espere amornar e corte em palitos ou quadradinhos"
+      ]
+    },
+    {
+      "tipo": "dica",
+      "emoji_grande": "💡",
+      "paragrafos": [
+        "<b>Esprema bem a abobrinha</b> num pano limpo antes de misturar — assim a omelete não fica aguada.",
+        "Troque os legumes ao longo da semana: espinafre, brócolis picadinho e abóbora também ficam ótimos."
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
   ],
   "legenda": "Um jeito fácil de colocar legumes na rotina do bebê: escondidinho na omelete! 🥚🥕\n\nAssada no forno, ela fica firme e fácil de cortar em palitos — perfeita para o bebê treinar a pegada e comer sozinho.\n\nServe no almoço, no jantar ou no lanche, e a família toda pode comer junto.\n\n👉 Arrasta pro lado para ver a receita.\n\n📌 Salve para não esquecer.\n\n🎁 No link da bio: guia gratuito com 5 receitas sem açúcar e sem sal.\n\n⚠️ O ovo é alergênico: na primeira vez, ofereça de dia e observe. Conteúdo informativo — siga a orientação do pediatra.",
-  "hashtags": ["#receitasparabebe", "#blw", "#introducaoalimentar", "#omeletedeforno", "#bebede6meses", "#alimentacaoinfantil", "#comidadebebe"]
+  "hashtags": [
+    "#receitasparabebe",
+    "#blw",
+    "#introducaoalimentar",
+    "#omeletedeforno",
+    "#bebede6meses",
+    "#alimentacaoinfantil",
+    "#comidadebebe"
+  ]
 }

@@ -3,29 +3,69 @@
   "hora": "19:30",
   "tipo": "carrossel",
   "pilar": "receita",
-  "status": "rascunho",
+  "status": "aprovado",
   "titulo_curto": "Panqueca de banana",
   "slides": [
-    {"tipo": "capa", "selo": "A partir de 6 meses", "emoji": "🥞", "titulo": "Panqueca de banana com 2 ingredientes", "subtitulo": "Sem açúcar • pronta em 10 minutos"},
-    {"tipo": "lista", "titulo": "Ingredientes", "itens": [
-      {"emoji": "🍌", "texto": "1 banana <b>bem madura</b>"},
-      {"emoji": "🥚", "texto": "1 ovo"},
-      {"emoji": "🫒", "texto": "Fio de azeite para untar"},
-      {"emoji": "✨", "texto": "Opcional: pitada de canela"}
-    ]},
-    {"tipo": "passos", "titulo": "Modo de preparo", "itens": [
-      "Amasse a banana com o garfo até virar um purê",
-      "Junte o ovo e misture bem",
-      "Unte uma frigideira antiaderente com um fio de azeite, em <b>fogo baixo</b>",
-      "Coloque pequenas porções e deixe cerca de 2 minutos de cada lado",
-      "Confira se o ovo está <b>bem cozido por dentro</b>, sem partes moles"
-    ]},
-    {"tipo": "dica", "emoji_grande": "✂️", "paragrafos": [
-      "<b>Para servir:</b> corte em tiras do tamanho de um dedo adulto — o bebê consegue segurar sozinho.",
-      "O ovo é um alimento alergênico: na primeira vez, ofereça de dia e observe o bebê nas horas seguintes."
-    ]},
-    {"tipo": "cta"}
+    {
+      "tipo": "capa",
+      "selo": "A partir de 6 meses",
+      "emoji": "🥞",
+      "titulo": "Panqueca de banana com 2 ingredientes",
+      "subtitulo": "Sem açúcar • pronta em 10 minutos"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🍌",
+          "texto": "1 banana <b>bem madura</b>"
+        },
+        {
+          "emoji": "🥚",
+          "texto": "1 ovo"
+        },
+        {
+          "emoji": "🫒",
+          "texto": "Fio de azeite para untar"
+        },
+        {
+          "emoji": "✨",
+          "texto": "Opcional: pitada de canela"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Amasse a banana com o garfo até virar um purê",
+        "Junte o ovo e misture bem",
+        "Unte uma frigideira antiaderente com um fio de azeite, em <b>fogo baixo</b>",
+        "Coloque pequenas porções e deixe cerca de 2 minutos de cada lado",
+        "Confira se o ovo está <b>bem cozido por dentro</b>, sem partes moles"
+      ]
+    },
+    {
+      "tipo": "dica",
+      "emoji_grande": "✂️",
+      "paragrafos": [
+        "<b>Para servir:</b> corte em tiras do tamanho de um dedo adulto — o bebê consegue segurar sozinho.",
+        "O ovo é um alimento alergênico: na primeira vez, ofereça de dia e observe o bebê nas horas seguintes."
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
   ],
   "legenda": "A panqueca mais fácil que existe: banana + ovo. Só isso! 🥞\n\nSem farinha, sem açúcar e perfeita para o bebê pegar com a mão a partir dos 6 meses.\n\n👉 Arrasta pro lado para ver o passo a passo.\n\nDica de mãe para mãe: use a banana com casca bem pintadinha — quanto mais madura, mais docinha a panqueca fica naturalmente.\n\n📌 Salve para fazer no café da manhã ou no lanche da tarde.\n\n🎁 Quer mais receitas assim? O guia gratuito com 5 receitas está no link da bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
-  "hashtags": ["#receitasparabebe", "#introducaoalimentar", "#panquecadebanana", "#blw", "#lanchedebebe", "#bebede6meses", "#semacucar"]
+  "hashtags": [
+    "#receitasparabebe",
+    "#introducaoalimentar",
+    "#panquecadebanana",
+    "#blw",
+    "#lanchedebebe",
+    "#bebede6meses",
+    "#semacucar"
+  ]
 }

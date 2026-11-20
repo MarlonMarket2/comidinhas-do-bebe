@@ -3,28 +3,65 @@
   "hora": "19:30",
   "tipo": "carrossel",
   "pilar": "receita",
-  "status": "rascunho",
+  "status": "aprovado",
   "titulo_curto": "Palitinhos de batata-doce",
   "slides": [
-    {"tipo": "capa", "selo": "A partir de 6 meses • BLW", "emoji": "🍠", "titulo": "Palitinhos de batata-doce assada", "subtitulo": "O primeiro “salgadinho” do bebê — sem sal"},
-    {"tipo": "lista", "titulo": "Ingredientes", "itens": [
-      {"emoji": "🍠", "texto": "1 batata-doce média"},
-      {"emoji": "🫒", "texto": "1 colher (chá) de azeite"},
-      {"emoji": "🌿", "texto": "Opcional: orégano ou páprica doce"}
-    ]},
-    {"tipo": "passos", "titulo": "Modo de preparo", "itens": [
-      "Descasque e corte em palitos do <b>tamanho e grossura de um dedo adulto</b>",
-      "Cozinhe no vapor por 8 a 10 minutos",
-      "Espalhe numa assadeira, regue com o azeite e o tempero",
-      "Asse a 200 °C por cerca de 20 minutos, virando na metade",
-      "Espere amornar antes de servir"
-    ]},
-    {"tipo": "alerta", "emoji_grande": "🤏", "paragrafos": [
-      "<b>Teste do dedinho:</b> o palito precisa amassar fácil entre o polegar e o indicador.",
-      "Se estiver duro ou crocante demais, volte para o vapor. Bebê de 6 meses ainda não mastiga alimentos firmes."
-    ]},
-    {"tipo": "cta"}
+    {
+      "tipo": "capa",
+      "selo": "A partir de 6 meses • BLW",
+      "emoji": "🍠",
+      "titulo": "Palitinhos de batata-doce assada",
+      "subtitulo": "O primeiro “salgadinho” do bebê — sem sal"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🍠",
+          "texto": "1 batata-doce média"
+        },
+        {
+          "emoji": "🫒",
+          "texto": "1 colher (chá) de azeite"
+        },
+        {
+          "emoji": "🌿",
+          "texto": "Opcional: orégano ou páprica doce"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Descasque e corte em palitos do <b>tamanho e grossura de um dedo adulto</b>",
+        "Cozinhe no vapor por 8 a 10 minutos",
+        "Espalhe numa assadeira, regue com o azeite e o tempero",
+        "Asse a 200 °C por cerca de 20 minutos, virando na metade",
+        "Espere amornar antes de servir"
+      ]
+    },
+    {
+      "tipo": "alerta",
+      "emoji_grande": "🤏",
+      "paragrafos": [
+        "<b>Teste do dedinho:</b> o palito precisa amassar fácil entre o polegar e o indicador.",
+        "Se estiver duro ou crocante demais, volte para o vapor. Bebê de 6 meses ainda não mastiga alimentos firmes."
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
   ],
   "legenda": "Seu bebê quer pegar tudo com a mão? Então ele vai amar esses palitinhos! 🍠\n\nA batata-doce é docinha, nutritiva e fica no ponto certo para o BLW (quando o bebê come sozinho) se você cozinhar no vapor antes de assar.\n\nO segredo está no teste do dedinho: tem que amassar fácil entre os dedos. Assim o bebê treina a mastigação com segurança.\n\n📌 Salve e compartilhe com aquela amiga que está começando a introdução alimentar.\n\n🎁 Guia gratuito com mais 5 receitas no link da bio.\n\n⚠️ Conteúdo informativo. Ofereça sempre com o bebê sentado e sob supervisão. Siga a orientação do pediatra.",
-  "hashtags": ["#blw", "#introducaoalimentar", "#batatadoce", "#receitasparabebe", "#bebede6meses", "#alimentacaoinfantil", "#comidadebebe"]
+  "hashtags": [
+    "#blw",
+    "#introducaoalimentar",
+    "#batatadoce",
+    "#receitasparabebe",
+    "#bebede6meses",
+    "#alimentacaoinfantil",
+    "#comidadebebe"
+  ]
 }
