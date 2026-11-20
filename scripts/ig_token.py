@@ -7,6 +7,7 @@ O token NUNCA é impresso. Para colocar o primeiro token, crie o arquivo .env co
     IG_TOKEN=cole_aqui
 """
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -30,8 +31,12 @@ def gravar_secret(novo: str):
     if not repo:
         print("  (sem github_repo no config.json — secret do GitHub não atualizado)")
         return
+    # Usa sempre a conta dona do repositório, mesmo que outra conta esteja ativa no gh.
+    dono = repo.split("/")[0]
+    tk = subprocess.run(["gh", "auth", "token", "--user", dono], text=True, capture_output=True)
+    env = {**os.environ, "GH_TOKEN": tk.stdout.strip()} if tk.returncode == 0 else None
     r = subprocess.run(["gh", "secret", "set", "IG_TOKEN", "--repo", repo], input=novo, text=True,
-                       capture_output=True)
+                       capture_output=True, env=env)
     print("  secret IG_TOKEN atualizado no GitHub" if r.returncode == 0 else f"  falha no gh: {r.stderr.strip()}")
 
 
