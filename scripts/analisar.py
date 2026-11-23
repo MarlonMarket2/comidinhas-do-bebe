@@ -4,12 +4,19 @@ Coleta dados de mídias, curtidas, comentários e insights do perfil,
 classifica comentários (dúvidas, pedidos, CTAs, elogios) e gera relatórios
 didáticos com recomendações práticas para pautar a criação de conteúdo.
 """
+import argparse
 import json
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).parent))
+try:
+    import instagram as ig
+except ImportError:
+    from scripts import instagram as ig
 
 
 def categorizar_comentario(comentario: dict, palavra_cta: str = "PRATINHO") -> str:
@@ -186,3 +193,85 @@ def gerar_relatorio_markdown(ranking_posts: list[dict], categorias: dict, total_
     linhas.append("")
 
     return "\n".join(linhas)
+
+
+def buscar_dados_perfil(limite: int = 25) -> dict:
+    """Busca dados de posts, comentários e métricas do perfil conectado."""
+    conta = ig.eu()
+    uid = conta["user_id"]
+
+    campos_media = "id,caption,media_type,timestamp,like_count,comments_count,permalink"
+    resp_media = ig.get(f"{uid}/media", fields=campos_media, limit=limite)
+    posts = resp_media.get("data", [])
+
+    todos_comentarios = []
+    for p in posts:
+        mid = p["id"]
+        try:
+            resp_c = ig.get(f"{mid}/comments", fields="id,text,username,timestamp,like_count")
+            comms = resp_c.get("data", [])
+            for c in comms:
+                c["post_id"] = mid
+            todos_comentarios.extend(comms)
+        except Exception:
+            pass
+
+        try:
+            resp_ins = ig.get(f"{mid}/insights", metric="impressions,reach,saved")
+            p["insights"] = {
+                item["name"]: item["values"][0]["value"]
+                for item in resp_ins.get("data", [])
+                if item.get("values")
+            }
+        except Exception:
+            p["insights"] = {}
+
+    return {
+        "user": conta,
+        "posts": posts,
+        "comentarios": todos_comentarios,
+    }
+
+
+def executar_analise(limite: int = 25, palavra_cta: str = "PRATINHO", destino_arquivo: Path | None = None) -> str:
+    """Executa o ciclo completo de análise e geração de relatório."""
+    dados = buscar_dados_perfil(limite=limite)
+    ranking = calcular_engajamento_posts(dados["posts"])
+    categorias = classificar_comentarios(dados["comentarios"], palavra_cta=palavra_cta)
+    md = gerar_relatorio_markdown(ranking, categorias, total_posts=len(dados["posts"]))
+
+    if destino_arquivo:
+        destino_arquivo = Path(destino_arquivo)
+        destino_arquivo.parent.mkdir(parents=True, exist_ok=True)
+        destino_arquivo.write_text(md, encoding="utf-8")
+        print(f"✓ Relatório salvo em: {destino_arquivo}")
+
+    return md
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Analisa posts e comentários do perfil @comidinhasdobebe.dicas")
+    ap.add_argument("--limite", type=int, default=25, help="Quantidade máxima de posts recentes para analisar")
+    ap.add_argument("--saida", type=str, default="", help="Caminho do arquivo de saída Markdown")
+    args = ap.parse_args()
+
+    config_path = RAIZ / "config.json"
+    palavra = "PRATINHO"
+    if config_path.exists():
+        try:
+            cfg = json.loads(config_path.read_text(encoding="utf-8"))
+            palavra = cfg.get("palavra_comentario", "PRATINHO")
+        except Exception:
+            pass
+
+    if args.saida:
+        dest = Path(args.saida)
+    else:
+        hoje = datetime.now().strftime("%Y-%m-%d")
+        dest = RAIZ / "relatorios" / f"{hoje}.md"
+
+    relatorio = executar_analise(limite=args.limite, palavra_cta=palavra, destino_arquivo=dest)
+    print("\n--- Resumo do Relatório Gerado ---")
+    print("\n".join(relatorio.splitlines()[:15]))
+    print("...\n(Relatório completo salvo)")
+

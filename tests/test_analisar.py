@@ -1,9 +1,12 @@
 import unittest
+from unittest.mock import patch, MagicMock
 from scripts.analisar import (
     categorizar_comentario,
     classificar_comentarios,
     calcular_engajamento_posts,
     gerar_relatorio_markdown,
+    buscar_dados_perfil,
+    executar_analise,
 )
 
 
@@ -64,6 +67,33 @@ class TestAnalisar(unittest.TestCase):
         self.assertIn("Panqueca de banana", md)
         self.assertIn("PRATINHO", md)
         self.assertIn("Pode congelar?", md)
+
+    @patch("scripts.analisar.ig")
+    def test_buscar_dados_perfil(self, mock_ig):
+        mock_ig.eu.return_value = {"user_id": "12345", "username": "testuser"}
+        mock_ig.get.side_effect = [
+            # 1. media list
+            {"data": [{"id": "m1", "caption": "Post 1", "like_count": 5, "comments_count": 1, "permalink": "url1"}]},
+            # 2. comments list for m1
+            {"data": [{"id": "c1", "text": "PRATINHO", "username": "user1"}]},
+            # 3. insights (fails or succeeds)
+            {"data": []},
+        ]
+        dados = buscar_dados_perfil(limite=5)
+        self.assertEqual(len(dados["posts"]), 1)
+        self.assertEqual(len(dados["comentarios"]), 1)
+        self.assertEqual(dados["user"]["username"], "testuser")
+
+    @patch("scripts.analisar.buscar_dados_perfil")
+    def test_executar_analise(self, mock_buscar):
+        mock_buscar.return_value = {
+            "user": {"user_id": "12345", "username": "testuser"},
+            "posts": [{"id": "m1", "caption": "Post 1", "like_count": 5, "comments_count": 1, "permalink": "url1"}],
+            "comentarios": [{"id": "c1", "text": "PRATINHO", "username": "user1"}],
+        }
+        res = executar_analise(limite=5, palavra_cta="PRATINHO")
+        self.assertIn("# Relatório de Desempenho", res)
+        self.assertIn("PRATINHO", res)
 
 
 if __name__ == "__main__":
