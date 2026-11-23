@@ -127,16 +127,18 @@ def gerar_relatorio_markdown(ranking_posts: list[dict], categorias: dict, total_
     if not ranking_posts:
         linhas.append("_Nenhum post encontrado no período analisado._\n")
     else:
-        linhas.append("| Post | Tipo | Curtidas | Comentários | Engajamento Total | Link |")
-        linhas.append("| :--- | :--- | :--- | :--- | :--- | :--- |")
+        linhas.append("| Post | Tipo | Curtidas | Salvos | Alcance | Comentários | Link |")
+        linhas.append("| :--- | :--- | :--- | :--- | :--- | :--- | :--- |")
         for p in ranking_posts:
             titulo = (p.get("caption") or "Sem legenda").split("\n")[0][:45]
             tipo = p.get("media_type", "POST")
             likes = p.get("like_count", 0)
             comm = p.get("comments_count", 0)
-            eng = p.get("engajamento_total", 0)
+            ins = p.get("insights") or {}
+            salvos = ins.get("saved", "-")
+            alcance = ins.get("reach", "-")
             link = f"[Ver post]({p['permalink']})" if p.get("permalink") else "-"
-            linhas.append(f"| {titulo} | `{tipo}` | {likes} | {comm} | **{eng}** | {link} |")
+            linhas.append(f"| {titulo} | `{tipo}` | {likes} | {salvos} | {alcance} | {comm} | {link} |")
         linhas.append("")
 
     linhas.extend([
@@ -217,7 +219,7 @@ def buscar_dados_perfil(limite: int = 25) -> dict:
             pass
 
         try:
-            resp_ins = ig.get(f"{mid}/insights", metric="impressions,reach,saved")
+            resp_ins = ig.get(f"{mid}/insights", metric="reach,saved,total_interactions")
             p["insights"] = {
                 item["name"]: item["values"][0]["value"]
                 for item in resp_ins.get("data", [])
