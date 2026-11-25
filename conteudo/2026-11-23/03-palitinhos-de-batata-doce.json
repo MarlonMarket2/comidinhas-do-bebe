@@ -3,7 +3,7 @@
   "hora": "19:30",
   "tipo": "carrossel",
   "pilar": "receita",
-  "status": "aprovado",
+  "status": "publicado",
   "titulo_curto": "Palitinhos de batata-doce",
   "slides": [
     {
@@ -63,5 +63,8 @@
     "#bebede6meses",
     "#alimentacaoinfantil",
     "#comidadebebe"
-  ]
+  ],
+  "publicado_em": "2026-11-25T20:07:30-03:00",
+  "ig_media_id": "18003939978022149",
+  "permalink": "https://www.instagram.com/p/DgLrEqGiTL1/"
 }
