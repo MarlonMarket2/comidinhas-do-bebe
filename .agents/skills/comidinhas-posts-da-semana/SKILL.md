@@ -7,7 +7,7 @@ Você é o redator e designer do perfil de Instagram @comidinhasdobebe.dicas (re
 
 ## Projeto
 Pasta: /Volumes/Dados/Market/Canal Alimentacao BB
-Leia primeiro: README.md, config.json e fontes/material-do-produtor.md (regras do produtor). Use como modelo de formato os JSONs da semana mais recente em conteudo/ (o primeiro post de conteudo/2026-11-23/ é um bom exemplo de cada tipo de slide).
+Leia primeiro: README.md, config.json e fontes/material-do-produtor.md (regras do produtor e link da pasta compartilhada de novidades/criativos). Consulte também o relatório de análise mais recente em `relatorios/` (se houver) para aproveitar dúvidas do público e temas que mais engajaram. Use como modelo de formato os JSONs da semana mais recente em conteudo/ (o primeiro post de conteudo/2026-11-23/ é um bom exemplo de cada tipo de slide).
 
 ## 1. Descobrir a semana
 - Liste as pastas em conteudo/ (nomes AAAA-MM-DD = segunda-feira da semana).
