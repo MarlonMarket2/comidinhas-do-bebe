@@ -1,0 +1,71 @@
+{
+  "data": "2026-12-01",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "receita",
+  "status": "aprovado",
+  "titulo_curto": "Pãozinho de batata",
+  "slides": [
+    {
+      "tipo": "capa",
+      "selo": "A partir de 6 meses",
+      "emoji": "🥖",
+      "titulo": "Pãozinho de batata-doce com 2 ingredientes",
+      "subtitulo": "Fofinho, sem queijo salgado e ideal para o lanche"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🍠",
+          "texto": "1 xícara de batata-doce cozida e <b>amassada</b>"
+        },
+        {
+          "emoji": "🥣",
+          "texto": "1 xícara de polvilho doce (ou azedo)"
+        },
+        {
+          "emoji": "🫒",
+          "texto": "1 colher de sopa de azeite extravirgem"
+        },
+        {
+          "emoji": "🌿",
+          "texto": "Opcional: pitada de orégano ou cúrcuma"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Misture a batata-doce ainda morna com o polvilho e o azeite",
+        "Amasse com as mãos até formar uma massa lisa que não grude (se precisar, pincele água)",
+        "Modele em formato de <b>palitos</b> ou bolinhas grandes",
+        "Leve ao forno preaquecido a 180 °C por cerca de 20 minutos",
+        "Espere amornar antes de oferecer — fica macio por dentro!"
+      ]
+    },
+    {
+      "tipo": "dica",
+      "emoji_grande": "👶",
+      "paragrafos": [
+        "<b>Dica para BLW:</b> faça no formato de bastões do tamanho de um dedo adulto para o bebê segurar fácil.",
+        "Não precisa de queijo nem sal — a batata-doce dá sabor e maciez naturalmente."
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
+  ],
+  "legenda": "Parece pão de queijo, mas é 100% seguro e sem sal para bebês a partir dos 6 meses! 🍠✨\n\nCom apenas batata-doce e polvilho, você faz um lanche delicioso que não esfarela fácil e ajuda o bebê a treinar a pegada.\n\n👉 Arrasta para anotar o modo de preparo.\n\n📌 Salve para o lanche da tarde de amanhã!\n\n🎁 Baixe o guia gratuito com mais receitas seguras no link da bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": [
+    "#introducaoalimentar",
+    "#receitasparabebe",
+    "#blw",
+    "#lanchedebebe",
+    "#paodequeijosemsal",
+    "#bebede6meses",
+    "#comidadebebe"
+  ]
+}

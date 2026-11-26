@@ -1,0 +1,71 @@
+{
+  "data": "2026-12-04",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "receita",
+  "status": "aprovado",
+  "titulo_curto": "Bolinho de arroz",
+  "slides": [
+    {
+      "tipo": "capa",
+      "selo": "A partir de 6 meses",
+      "emoji": "🍙",
+      "titulo": "Bolinho assado de arroz com abobrinha",
+      "subtitulo": "Aproveite o arroz cozido sem usar fritura"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🍚",
+          "texto": "1 xícara de <b>arroz cozido sem sal</b>"
+        },
+        {
+          "emoji": "🥒",
+          "texto": "½ abobrinha ralada fina (espremida no pano)"
+        },
+        {
+          "emoji": "🥕",
+          "texto": "2 colheres de sopa de cenoura ralada"
+        },
+        {
+          "emoji": "🥚",
+          "texto": "1 ovo e 2 colheres de sopa de aveia fina"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Misture o arroz cozido, a abobrinha espremida, a cenoura e a aveia",
+        "Adicione o ovo e mexa até dar liga (se ficar úmido, ponha mais aveia)",
+        "Modele bolinhos achatados ou croquetes fáceis de segurar",
+        "Coloque em forma untada com um fio de azeite",
+        "Asse em forno a 180 °C por cerca de 20 minutos, virando na metade"
+      ]
+    },
+    {
+      "tipo": "dica",
+      "emoji_grande": "🥚",
+      "paragrafos": [
+        "<b>Atenção ao ovo:</b> certifique-se de que o bolinho está firme e completamente assado por dentro.",
+        "Se for a primeira vez do bebê com ovo, ofereça durante o dia e observe."
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
+  ],
+  "legenda": "Sobrou arroz do almoço? Transforme em um jantar ou lanche nutritivo para o seu bebê em 20 minutinhos! 🍙🥕\n\nNada de fritura: assado no forno (ou na airfryer!), ele fica douradinho por fora e macio por dentro para a gengiva.\n\n👉 Arrasta pro lado para ver os ingredientes.\n\n📌 Salve para não esquecer na próxima vez que sobrar arroz!\n\n🎁 Mais receitas práticas no nosso guia gratuito (link na bio).\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": [
+    "#introducaoalimentar",
+    "#receitasparabebe",
+    "#bolinhodearroz",
+    "#blw",
+    "#jantarparabebe",
+    "#bebede6meses",
+    "#semsal"
+  ]
+}

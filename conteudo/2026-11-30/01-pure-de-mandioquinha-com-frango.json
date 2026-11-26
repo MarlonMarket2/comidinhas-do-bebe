@@ -1,0 +1,71 @@
+{
+  "data": "2026-11-30",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "receita",
+  "status": "aprovado",
+  "titulo_curto": "Purê com frango",
+  "slides": [
+    {
+      "tipo": "capa",
+      "selo": "A partir de 6 meses",
+      "emoji": "🥣",
+      "titulo": "Purê de mandioquinha com frango desfiado",
+      "subtitulo": "Almoço cremoso, nutritivo e pronto em 20 min"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🥔",
+          "texto": "2 mandioquinhas (batata-baroa) médias"
+        },
+        {
+          "emoji": "🍗",
+          "texto": "100 g de <b>peito de frango</b> sem pele"
+        },
+        {
+          "emoji": "🧄",
+          "texto": "1 dente de alho e cheiro-verde picadinho"
+        },
+        {
+          "emoji": "🫒",
+          "texto": "1 colher de chá de azeite extravirgem"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Cozinhe o frango com alho e cheiro-verde até ficar bem macio; desfie bem fininho",
+        "Cozinhe a mandioquinha no vapor ou em pouca água até desmanchar",
+        "Amasse a mandioquinha <b>apenas com o garfo</b> (não use liquidificador)",
+        "Junte o azeite e um pouco da água do cozimento para dar cremosidade",
+        "Misture o frango desfiado e sirva morno para o bebê"
+      ]
+    },
+    {
+      "tipo": "dica",
+      "emoji_grande": "🥄",
+      "paragrafos": [
+        "<b>Textura certa:</b> deixar o purê amassado com o garfo estimula a mastigação desde os 6 meses.",
+        "<b>Tempero natural:</b> use alho, cebola, tomilho ou salsinha no lugar do sal."
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
+  ],
+  "legenda": "Sem ideias para o almoço de hoje? Essa combinação de mandioquinha com frango é sucesso garantido com os bebês! 🥣💛\n\nA mandioquinha tem um sabor naturalmente adocicado que ajuda muito na aceitação, e o frango bem desfiadinho garante a proteína da refeição.\n\n👉 Arrasta pro lado para ver o passo a passo.\n\n📌 Salve essa receita para repetir durante a semana!\n\n🎁 Quer mais ideias práticas? O nosso guia gratuito com 5 receitas está no link da bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": [
+    "#introducaoalimentar",
+    "#receitasparabebe",
+    "#almocodobebe",
+    "#papinhasalgada",
+    "#bebede6meses",
+    "#alimentacaosaudavel",
+    "#semsal"
+  ]
+}

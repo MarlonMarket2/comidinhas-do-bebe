@@ -1,0 +1,66 @@
+{
+  "data": "2026-12-06",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "receita",
+  "status": "aprovado",
+  "titulo_curto": "Sorvetinho de manga",
+  "slides": [
+    {
+      "tipo": "capa",
+      "selo": "Alívio para gengiva",
+      "emoji": "🥭",
+      "titulo": "Sorvetinho natural de manga com banana",
+      "subtitulo": "Só fruta! Sem açúcar, sem leite e refrescante"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🥭",
+          "texto": "1 manga madura picada e <b>congelada</b>"
+        },
+        {
+          "emoji": "🍌",
+          "texto": "1 banana nanica ou prata picada e congelada"
+        },
+        {
+          "emoji": "🥥",
+          "texto": "Opcional: 1 colher de sopa de água de coco natural"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Pique a manga e a banana maduras em rodelas e leve ao freezer por 3 horas",
+        "Bata as frutas congeladas no processador (ou mixer potente) até ficar cremoso",
+        "Se precisar ajudar a bater, adicione 1 colher de água filtrada",
+        "Sirva imediatamente na colherinha como sobremesa ou lanche",
+        "Se sobrar, leve às forminhas de picolé infantis"
+      ]
+    },
+    {
+      "tipo": "dica",
+      "emoji_grande": "🦷",
+      "paragrafos": [
+        "<b>Dica para os dentinhos:</b> nos dias de incômodo da gengiva, o geladinho natural da fruta traz muito alívio sem nada artificial."
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
+  ],
+  "legenda": "Domingo pede uma sobremesa saudável que o bebê também pode aproveitar! 🥭🍌\n\nFeito apenas com fruta congelada batida, fica com textura real de sorvete de massa — zero açúcar, zero leite e zero corantes.\n\n👉 Arrasta para ver como é rápido fazer.\n\n📌 Salve para o próximo dia de calor (ou quando os dentinhos estiverem nascendo)!\n\n🎁 Baixe o guia gratuito com 5 receitas no link da bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": [
+    "#introducaoalimentar",
+    "#receitasparabebe",
+    "#sorvetenatural",
+    "#lanchedebebe",
+    "#semacucar",
+    "#dentinhos",
+    "#bebede6meses"
+  ]
+}

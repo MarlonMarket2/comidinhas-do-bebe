@@ -1,0 +1,70 @@
+{
+  "data": "2026-12-05",
+  "hora": "11:30",
+  "tipo": "carrossel",
+  "pilar": "receita",
+  "status": "aprovado",
+  "titulo_curto": "Hamburguinho de carne",
+  "slides": [
+    {
+      "tipo": "capa",
+      "selo": "Rico em ferro",
+      "emoji": "🍔",
+      "titulo": "Hamburguinho de carne com beterraba",
+      "subtitulo": "Macio, suculento e perfeito para congelar"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🥩",
+          "texto": "250 g de <b>carne moída magra</b> (patinho)"
+        },
+        {
+          "emoji": "🟣",
+          "texto": "½ beterraba pequena ralada bem fina"
+        },
+        {
+          "emoji": "🌾",
+          "texto": "2 colheres de sopa de farelo de aveia"
+        },
+        {
+          "emoji": "🧄",
+          "texto": "Cebola picadinha, alho e salsinha a gosto"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Coloque a carne, a beterraba ralada e os temperos naturais em uma tigela",
+        "Misture a aveia aos poucos para dar liga e manter a suculência",
+        "Modele mini hambúrgueres baixos e macios",
+        "Grelhe em frigideira antiaderente com fio de azeite, fogo baixo",
+        "Tampe por alguns minutos para garantir que fique <b>bem cozido por dentro</b>"
+      ]
+    },
+    {
+      "tipo": "dica",
+      "emoji_grande": "🍊",
+      "paragrafos": [
+        "<b>Dupla campeã:</b> sirva com uma rodela de laranja (ou fruta cítrica) de sobremesa — a vitamina C multiplica a absorção do ferro da carne!"
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
+  ],
+  "legenda": "Quer garantir o ferro que o seu bebê precisa sem brigar com a colher? Esse hamburguinho macio é amado até pelos bebês que recusam carne! 🥩🟣\n\nA beterraba dá uma cor linda e mantém a carne bem molhadinha, facilitando a mastigação pela gengiva.\n\n👉 Arrasta pro lado para ver o segredo da vitamina C no final.\n\n📌 Salve para preparar um lote e congelar para a semana!\n\n🎁 Quer um guia gratuito com receitas passo a passo? Link na bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": [
+    "#introducaoalimentar",
+    "#receitasparabebe",
+    "#blw",
+    "#almocodobebe",
+    "#ferroparabebe",
+    "#bebede6meses",
+    "#comidadeverdade"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "data": "2026-12-02",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "receita",
+  "status": "aprovado",
+  "titulo_curto": "Mingau de aveia",
+  "slides": [
+    {
+      "tipo": "capa",
+      "selo": "A partir de 6 meses",
+      "emoji": "🍎",
+      "titulo": "Mingau cremoso de aveia com maçã",
+      "subtitulo": "Sem açúcar e sem leite de vaca • pronto em 8 min"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Ingredientes",
+      "itens": [
+        {
+          "emoji": "🥣",
+          "texto": "2 colheres de sopa de <b>aveia em flocos finos</b>"
+        },
+        {
+          "emoji": "🍎",
+          "texto": "½ maçã sem casca bem picadinha ou ralada"
+        },
+        {
+          "emoji": "💧",
+          "texto": "150 ml de água filtrada"
+        },
+        {
+          "emoji": "✨",
+          "texto": "Pitada de canela em pó (opcional)"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Modo de preparo",
+      "itens": [
+        "Coloque a água, a aveia e a maçã ralada em uma panelinha",
+        "Cozinhe em <b>fogo baixo</b>, mexendo sempre, por cerca de 5 minutos",
+        "Quando a maçã estiver bem molinha e o creme encorpar, desligue o fogo",
+        "Polvilhe uma pitadinha de canela e misture",
+        "Deixe esfriar até ficar morno antes de servir"
+      ]
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "Atenção ao leite",
+      "emoji": "🥛",
+      "paragrafos": [
+        "Antes de 1 ano, <b>não use leite de vaca</b> no preparo do mingau.",
+        "Se desejar deixar ainda mais nutritivo, misture leite materno ou fórmula preparada apenas depois de morno."
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
+  ],
+  "legenda": "Café da manhã quentinho, nutritivo e que ajuda até no funcionamento do intestino do bebê! 🍎🥣\n\nA maçã cozida junto com a aveia deixa o mingau naturalmente doce, dispensando açúcar ou mel (lembrando: mel só após 1 ano!).\n\n👉 Arrasta pro lado para ver o passo a passo completo.\n\n📌 Salve para variar o café da manhã do seu pequeno!\n\n🎁 Confira o guia gratuito com 5 receitas no link da bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": [
+    "#introducaoalimentar",
+    "#cafedamanhadobebe",
+    "#mingaudeaveia",
+    "#receitasparabebe",
+    "#semacucar",
+    "#bebede6meses",
+    "#maternidadereal"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "data": "2026-12-03",
+  "hora": "19:30",
+  "tipo": "carrossel",
+  "pilar": "dica",
+  "status": "aprovado",
+  "titulo_curto": "Como congelar papinhas",
+  "slides": [
+    {
+      "tipo": "capa",
+      "selo": "Salve este post",
+      "emoji": "❄️",
+      "titulo": "Como congelar a comida do bebê com segurança",
+      "subtitulo": "Praticidade para a semana sem perder nutrientes"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Passo a passo certo",
+      "itens": [
+        {
+          "emoji": "🥣",
+          "texto": "<b>Congele separado:</b> arroz, feijão, carne e legumes em porções individuais"
+        },
+        {
+          "emoji": "🫙",
+          "texto": "<b>Potes certos:</b> prefira vidro com tampa ou silicone livre de BPA"
+        },
+        {
+          "emoji": "🏷️",
+          "texto": "<b>Etiquete:</b> anote o nome e a data (validade de até 30 dias no freezer)"
+        },
+        {
+          "emoji": "🔥",
+          "texto": "<b>Esfrie antes:</b> nunca leve comida quente direto ao congelador"
+        }
+      ]
+    },
+    {
+      "tipo": "alerta",
+      "titulo": "Nunca faça isso",
+      "emoji": "🚫",
+      "paragrafos": [
+        "❌ <b>Recongelar</b> comida que já foi descongelada<br>❌ Descongelar em temperatura ambiente (em cima da pia)<br>❌ Congelar folhas cruas ou ovo cozido inteiro (perdem a textura)"
+      ]
+    },
+    {
+      "tipo": "dica",
+      "emoji_grande": "🧊",
+      "paragrafos": [
+        "<b>Como descongelar certo:</b> passe da geladeira na noite anterior ou aqueça direto no banho-maria / panelinha.",
+        "<b>Dica de ouro:</b> use forminhas de gelo de silicone para congelar caldos naturais e feijão em cubinhos!"
+      ]
+    },
+    {
+      "tipo": "cta"
+    }
+  ],
+  "legenda": "Não dá para cozinhar do zero todos os dias, né? Congelar do jeito certo salva a rotina sem comprometer a saúde do bebê! ❄️👶\n\nO segredo é congelar os grupos separados (feijão, proteínas e legumes) — assim você combina pratos diferentes todo dia sem enjoar.\n\n👉 Arrasta para conferir os erros que você precisa evitar.\n\n📌 Salve este guia para consultar sempre que for organizar o freezer!\n\n🎁 O link do nosso guia gratuito de introdução alimentar está na bio.\n\n⚠️ Conteúdo informativo. Siga sempre a orientação do pediatra do seu bebê.",
+  "hashtags": [
+    "#introducaoalimentar",
+    "#rotinadebebe",
+    "#comidadebebe",
+    "#congelamento",
+    "#maespraticas",
+    "#bebede6meses",
+    "#dicasdemae"
+  ]
+}
