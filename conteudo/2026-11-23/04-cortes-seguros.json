@@ -3,7 +3,7 @@
   "hora": "19:30",
   "tipo": "carrossel",
   "pilar": "dica",
-  "status": "aprovado",
+  "status": "publicado",
   "titulo_curto": "Cortes seguros",
   "slides": [
     {
@@ -68,5 +68,8 @@
     "#alimentacaoinfantil",
     "#bebede6meses",
     "#dicasdemae"
-  ]
+  ],
+  "publicado_em": "2026-11-26T19:30:51-03:00",
+  "ig_media_id": "18103073087453069",
+  "permalink": "https://www.instagram.com/p/DgOLrbdF67c/"
 }
