@@ -3,7 +3,7 @@
   "hora": "19:30",
   "tipo": "carrossel",
   "pilar": "receita",
-  "status": "aprovado",
+  "status": "publicado",
   "titulo_curto": "Bolinho de banana e aveia",
   "slides": [
     {
@@ -67,5 +67,8 @@
     "#muffinsaudavel",
     "#bebede6meses",
     "#alimentacaoinfantil"
-  ]
+  ],
+  "publicado_em": "2026-11-27T19:44:48-03:00",
+  "ig_media_id": "18118710146144043",
+  "permalink": "https://www.instagram.com/p/DgQyD2sDTxU/"
 }
