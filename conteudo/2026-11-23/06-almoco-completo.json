@@ -3,7 +3,7 @@
   "hora": "11:30",
   "tipo": "carrossel",
   "pilar": "receita",
-  "status": "aprovado",
+  "status": "publicado",
   "titulo_curto": "Almoço completo",
   "slides": [
     {
@@ -75,5 +75,8 @@
     "#bebede6meses",
     "#alimentacaoinfantil",
     "#semsal"
-  ]
+  ],
+  "publicado_em": "2026-11-28T11:35:42-03:00",
+  "ig_media_id": "17916926601508777",
+  "permalink": "https://www.instagram.com/p/DgSe4T4leJN/"
 }
